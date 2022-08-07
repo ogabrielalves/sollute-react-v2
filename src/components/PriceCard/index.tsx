@@ -1,4 +1,5 @@
-import * as React from 'react';
+import styles from './PriceCard.module.scss';
+
 import Card from '@mui/material/Card';
 import CardActions from '@mui/material/CardActions';
 import CardContent from '@mui/material/CardContent';
@@ -19,7 +20,7 @@ interface Props {
 export default function PriceCard({ typePlan, pricePlan, imagePlan, alt, variantButton, backgroundColor, borderColor, colorText}: Props) {
   return (
     <>
-      <Card sx={{ minWidth: 280, maxWidth: 280, height: 500, borderRadius: 0, boxShadow: '0 4px 30px 0 rgba(0,0,0,0.61)' }}>
+      <Card className={styles.card}>
         <CardContent>
           <Typography sx={{ fontSize: 20, fontWeight: '500', textAlign: 'center', marginBottom: '20px', marginTop: '30px' }} gutterBottom>
             {typePlan}
