@@ -2,14 +2,15 @@
     background-color: #E5E5E5;
     height: 100vh;
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
 }
 
 .boxPrice {
     display: flex;  
 }
 
-.priceCard {
-    margin-left: 70px;
+.priceCardCenter {
+    margin: 0 70px;
 }
