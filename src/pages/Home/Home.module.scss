@@ -51,3 +51,17 @@
     }
     
 }
+
+@media screen and (max-width: 680px) {
+    .leftSide {
+
+        p {
+            width: 90%;
+        }
+
+        .buttonRegister {
+            width: 65%;
+        }
+    }
+    
+}
