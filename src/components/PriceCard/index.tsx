@@ -20,7 +20,7 @@ interface Props {
 export default function PriceCard({ typePlan, pricePlan, imagePlan, alt, variantButton, backgroundColor, borderColor, colorText}: Props) {
   return (
     <>
-      <Card className={style.card}>
+      <Card className={style.boxCard}>
         <CardContent>
           <p className={style.typePlanTitle}>
             {typePlan}

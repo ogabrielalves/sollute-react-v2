@@ -1,10 +1,11 @@
-import Price from "./pages/Price";
 import "./styles/global.scss";
+import Rotas from './routes';
+
 
 function App() {
  
   return (
-    <Price/>
+    <Rotas/>
   )
 }
 
