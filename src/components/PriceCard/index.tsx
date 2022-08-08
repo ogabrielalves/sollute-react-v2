@@ -1,4 +1,4 @@
-import styles from './PriceCard.module.scss';
+import style from './PriceCard.module.scss';
 
 import Card from '@mui/material/Card';
 import CardActions from '@mui/material/CardActions';
@@ -20,21 +20,23 @@ interface Props {
 export default function PriceCard({ typePlan, pricePlan, imagePlan, alt, variantButton, backgroundColor, borderColor, colorText}: Props) {
   return (
     <>
-      <Card className={styles.card}>
+      <Card className={style.card}>
         <CardContent>
-          <Typography sx={{ fontSize: 20, fontWeight: '500', textAlign: 'center', marginBottom: '20px', marginTop: '30px' }} gutterBottom>
+          <p className={style.typePlanTitle}>
             {typePlan}
-          </Typography>
-          <Typography variant="h5" component="div" sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center', marginBottom: '20px'  }}>
+          </p>
+          <h2 className={style.boxPrice}>
             R$
-            <Typography variant="h4" sx={{fontWeight: '500'}}>{pricePlan}</Typography>
+            <h1>
+              {pricePlan}
+            </h1>
             /mês
-          </Typography>
-          <div style={{ display: 'flex', justifyContent: 'center', marginTop: '50px' }}>
-            <img src={imagePlan} alt={alt} width={180} />
+          </h2>
+          <div className={style.boxImage}>
+            <img src={imagePlan} alt={alt} />
           </div>
         </CardContent>
-        <CardActions sx={{justifyContent: 'center' }}>
+        <CardActions className={style.cardActions}>
           <Button variant={variantButton} sx={{ backgroundColor: `${backgroundColor}`, border: `2px solid ${borderColor}`, color: `${colorText}`, height: 30, width: 130, marginTop: '70px', fontWeight: '500'}}>ASSINAR</Button>
         </CardActions>
       </Card>
