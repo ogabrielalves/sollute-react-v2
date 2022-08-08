@@ -1,4 +1,5 @@
 import style from './Price.module.scss';
+import { useNavigate } from 'react-router-dom';
 
 import PriceCard from '../../components/PriceCard';
 
@@ -13,6 +14,9 @@ import ArrowBackIcon from '@mui/icons-material/ArrowBack';
 
 
 function Price() {
+
+    const navigate = useNavigate();
+
     return (
         <div className={style.background}>
             <p className={style.title}>
@@ -28,8 +32,8 @@ function Price() {
                         alt="Person typing"
                         variantButton='outlined'
                         backgroundColor='transparent'
-                        borderColor='#3E00FF'
-                        colorText='#3E00FF'
+                        borderColor='#e8c466'
+                        colorText='#e8c466'
                     />
                 </div>
 
@@ -40,9 +44,9 @@ function Price() {
                         imagePlan={PictureSemiannual}
                         alt="Person typing"
                         variantButton='contained'
-                        backgroundColor='#784DFF'
-                        borderColor='#784DFF'
-                        colorText='#fff'
+                        backgroundColor='#e8c466'
+                        borderColor='#e8c466'
+                        colorText='#000'
                     />
                 </div>
 
@@ -54,12 +58,17 @@ function Price() {
                         alt="People celebrating"
                         variantButton='outlined'
                         backgroundColor='transparent'
-                        borderColor='#9F80FF'
-                        colorText='#9F80FF'
+                        borderColor='#e8c466'
+                        colorText='#e8c466'
                     />
                 </div>
             </div>
-            <Button variant="contained" startIcon={<ArrowBackIcon/>} className={style.buttonBack} size='medium'>
+            <Button onClick={() => navigate("/")}
+                variant="contained"
+                startIcon={<ArrowBackIcon />}
+                className={style.buttonBack}
+                size='medium'
+            >
                 VOLTAR AO INICIO
             </Button>
         </div>

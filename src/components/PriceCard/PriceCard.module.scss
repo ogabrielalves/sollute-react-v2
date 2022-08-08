@@ -1,4 +1,4 @@
-.card {
+.boxCard {
     display: flex;
     justify-content: space-around;
     flex-direction: column;
@@ -7,6 +7,8 @@
     height: 500px;
     border-radius: 0;
     box-shadow: 0 4px 30px 0 rgba(0,0,0,0.61);
+    background-color: #09090a !important;
+    color: #e8c466 !important;
 }
 
 .typePlanTitle {
@@ -29,17 +31,13 @@
     margin-top: 50px;
     
     img{
-        width: 180px;
+        width: 280px;
     }
 }
 
 .cardActions {
     justify-content: center;
 }
-
-
-
-
 
 @media screen and (max-width: 1366px) {
     .card {
