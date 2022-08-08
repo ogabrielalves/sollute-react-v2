@@ -1,9 +1,10 @@
+import Price from "./pages/Price";
+import "./styles/global.scss";
+
 function App() {
  
   return (
-    <div className="App">
-     <h1>Oi</h1>
-    </div>
+    <Price/>
   )
 }
 
