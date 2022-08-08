@@ -1,48 +1,31 @@
 import * as React from 'react';
+
 import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
 import Toolbar from '@mui/material/Toolbar';
 import IconButton from '@mui/material/IconButton';
 import Typography from '@mui/material/Typography';
 import Menu from '@mui/material/Menu';
-import MenuIcon from '@mui/icons-material/Menu';
 import Container from '@mui/material/Container';
-import Avatar from '@mui/material/Avatar';
 import Button from '@mui/material/Button';
-import Tooltip from '@mui/material/Tooltip';
 import MenuItem from '@mui/material/MenuItem';
+
+import MenuIcon from '@mui/icons-material/Menu';
 import DeviceHubIcon from '@mui/icons-material/DeviceHub';
-
-import style from './NavBar.module.scss';
-
-
-
-const pages = [
-  'Home', 'Sobre', 'Planos', 'Contato'
-];
-const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
 
 const ResponsiveAppBar = () => {
   const [anchorElNav, setAnchorElNav] = React.useState<null | HTMLElement>(null);
-  const [anchorElUser, setAnchorElUser] = React.useState<null | HTMLElement>(null);
-
+ 
   const handleOpenNavMenu = (event: React.MouseEvent<HTMLElement>) => {
     setAnchorElNav(event.currentTarget);
   };
-  const handleOpenUserMenu = (event: React.MouseEvent<HTMLElement>) => {
-    setAnchorElUser(event.currentTarget);
-  };
-
+ 
   const handleCloseNavMenu = () => {
     setAnchorElNav(null);
   };
 
-  const handleCloseUserMenu = () => {
-    setAnchorElUser(null);
-  };
-
   return (
-    <AppBar position="static" sx={{ backgroundColor: '#09090a', color: '#e8c466' }}>
+    <AppBar position="static" sx={{backgroundColor: '#0a0a0a', color: '#e8c466'}}>
       <Container maxWidth="xl">
         <Toolbar disableGutters>
           <DeviceHubIcon sx={{ display: { xs: 'none', md: 'flex' }, mr: 1 }} />
@@ -163,7 +146,7 @@ const ResponsiveAppBar = () => {
           </Box>
 
           <Box sx={{ width: 220, display: 'flex', justifyContent: 'space-between' }}>
-            <Button variant="contained" className={style.register}>Cadastre-se</Button>
+            <Button variant="contained" >Cadastre-se</Button>
             <Button variant="outlined">Login</Button>
           </Box>
         </Toolbar>

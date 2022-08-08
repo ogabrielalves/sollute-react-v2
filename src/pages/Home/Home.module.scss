@@ -1,0 +1,39 @@
+.backgroundContainer {
+    background-image: url('../../assets/img/Background.png');
+    height: 100vh;
+    background-size: auto;
+    background-attachment: fixed;
+    color: white;
+}
+
+.leftSide {
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+    h1 {
+        font-size: 3rem;
+        margin-bottom: 10px;
+    }
+
+    p {
+        width: 30%;
+        margin-bottom: 10px;
+        line-height: 1.6;
+
+        span {
+            color: #e8c466;
+            font-weight: 500;
+        }
+    }
+
+    .buttonRegister {
+        width: 15%;
+    }
+
+    .leftSideItem {
+        margin-left: 50px;
+    }
+}

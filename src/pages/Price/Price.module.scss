@@ -1,15 +1,15 @@
 .background {
-    background-color: #000;
+
     height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-around;
     color: #e8c466;
 }
 
 .boxPrice {
     display: flex;  
+    margin-bottom: 130px;
 }
 
 .priceCardCenter {
@@ -19,6 +19,8 @@
 .title {
     font-size: 3rem;
     font-weight: 500;
+    margin-top: 20px;
+    margin-bottom: 70px;
 }
 
 .buttonBack {
