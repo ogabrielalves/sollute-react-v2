@@ -11,9 +11,9 @@ import ArrowBackIcon from '@mui/icons-material/ArrowBack';
 function Price() {
     return (
         <div className={style.background}>
-            <Typography variant="h3" sx={{ fontWeight: '500' }}>
+            <p className={style.title}>
                 ESCOLHA SEU PLANO
-            </Typography>
+            </p>
 
             <div className={style.boxPrice}>
                 <div className={style.priceCard}>
@@ -55,7 +55,7 @@ function Price() {
                     />
                 </div>
             </div>
-            <Button variant="contained" startIcon={<ArrowBackIcon/>} sx={{backgroundColor: '#3E00FF', height:30, width:230}}>
+            <Button variant="contained" startIcon={<ArrowBackIcon/>} className={style.buttonBack}>
                 VOLTAR AO INICIO
             </Button>
         </div>
