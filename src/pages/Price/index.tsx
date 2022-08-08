@@ -1,7 +1,11 @@
 import style from './Price.module.scss';
 
 import PriceCard from '../../components/PriceCard';
+
 import PictureMonthly from '../../assets/img/PictureMonthly.svg';
+import PictureSemiannual from '../../assets/img/PictureSemiannual.svg';
+import PictureYear from '../../assets/img/PictureYear.svg';
+
 import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
 
@@ -33,7 +37,7 @@ function Price() {
                     <PriceCard
                         typePlan='SEMESTRAL'
                         pricePlan={135}
-                        imagePlan={PictureMonthly}
+                        imagePlan={PictureSemiannual}
                         alt="Person typing"
                         variantButton='contained'
                         backgroundColor='#784DFF'
@@ -46,7 +50,7 @@ function Price() {
                     <PriceCard
                         typePlan='ANUAL'
                         pricePlan={300}
-                        imagePlan={PictureMonthly}
+                        imagePlan={PictureYear}
                         alt="People celebrating"
                         variantButton='outlined'
                         backgroundColor='transparent'
@@ -55,7 +59,7 @@ function Price() {
                     />
                 </div>
             </div>
-            <Button variant="contained" startIcon={<ArrowBackIcon/>} className={style.buttonBack}>
+            <Button variant="contained" startIcon={<ArrowBackIcon/>} className={style.buttonBack} size='medium'>
                 VOLTAR AO INICIO
             </Button>
         </div>
