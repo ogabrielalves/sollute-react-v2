@@ -37,7 +37,7 @@ export default function PriceCard({ typePlan, pricePlan, imagePlan, alt, variant
           </div>
         </CardContent>
         <CardActions className={style.cardActions}>
-          <Button variant={variantButton} sx={{ backgroundColor: `${backgroundColor}`, border: `2px solid ${borderColor}`, color: `${colorText}`, height: 30, width: 130, marginTop: '70px', fontWeight: '500'}}>ASSINAR</Button>
+          <Button variant={variantButton} sx={{ backgroundColor: `${backgroundColor}`, border: `2px solid ${borderColor}`, color: `${colorText}`, height: 30, width: 130, fontWeight: '500'}}>ASSINAR</Button>
         </CardActions>
       </Card>
 
