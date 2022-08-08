@@ -40,9 +40,13 @@
 }
 
 @media screen and (max-width: 1366px) {
-    .card {
-        min-width: 250px;
+    .boxCard {
+        min-width: 220px;
         max-width: 250px;
-        height: 450px;
+        height: 420px;
+    }
+
+    .boxImage {
+        margin-top: 0px;
     }
 }
