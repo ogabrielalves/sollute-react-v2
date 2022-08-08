@@ -1,4 +1,4 @@
-# Sollute Reacr V2
+# Sollute React V2
 
 ## Tecnologias
 - Vite
