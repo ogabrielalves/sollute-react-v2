@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { createContext } from 'react';
 import { ThemeProvider } from '@mui/material/styles';
-import themes from '../themes/Themes';
+import themes from '../Themes/Themes';
 
 interface Props {
     children: React.ReactElement
