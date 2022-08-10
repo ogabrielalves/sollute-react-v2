@@ -1,0 +1,35 @@
+.background {
+    background-color: #f1f1f1;
+    height: 100vh;
+}
+
+.container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    // background-color: pink;
+    width: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.forgotPass {
+    outline-style: none;
+    color: #A4A4A4;
+}
+
+.register {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

@@ -7,7 +7,6 @@ import PictureMonthly from '../../assets/img/PictureMonthly.svg';
 import PictureSemiannual from '../../assets/img/PictureSemiannual.svg';
 import PictureYear from '../../assets/img/PictureYear.svg';
 
-import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
 
 import ArrowBackIcon from '@mui/icons-material/ArrowBack';
@@ -36,8 +35,8 @@ function Price() {
                             alt="Person typing"
                             variantButton='outlined'
                             backgroundColor='transparent'
-                            borderColor='#e8c466'
-                            colorText='#e8c466'
+                            borderColor='#0f3dff'
+                            colorText='#0f3dff'
                         />
                     </div>
 
@@ -48,9 +47,9 @@ function Price() {
                             imagePlan={PictureSemiannual}
                             alt="Person typing"
                             variantButton='contained'
-                            backgroundColor='#e8c466'
-                            borderColor='#e8c466'
-                            colorText='#000'
+                            backgroundColor='#0229cf'
+                            borderColor='#0229cf'
+                            colorText='#fff'
                         />
                     </div>
 
@@ -62,8 +61,8 @@ function Price() {
                             alt="People celebrating"
                             variantButton='outlined'
                             backgroundColor='transparent'
-                            borderColor='#e8c466'
-                            colorText='#e8c466'
+                            borderColor='#0424AC'
+                            colorText='#0424AC'
                         />
                     </div>
                 </div>

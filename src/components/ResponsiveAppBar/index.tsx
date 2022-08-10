@@ -25,7 +25,7 @@ const ResponsiveAppBar = () => {
   };
 
   return (
-    <AppBar position="static" sx={{backgroundColor: '#0a0a0a', color: '#e8c466'}}>
+    <AppBar position="static" sx={{backgroundColor: 'transparent', color: '#000', boxShadow: 'none'}}>
       <Container maxWidth="xl">
         <Toolbar disableGutters>
           <DeviceHubIcon sx={{ display: { xs: 'none', md: 'flex' }, mr: 1 }} />
@@ -88,7 +88,11 @@ const ResponsiveAppBar = () => {
               <MenuItem key="Contato" onClick={handleCloseNavMenu}>
                 <Typography textAlign="center">Contato</Typography>
               </MenuItem>
-         
+              <MenuItem key="Login" onClick={handleCloseNavMenu}>
+                <Typography onClick={() => window.location.href = "/login"} textAlign="center">Login</Typography>
+              </MenuItem><MenuItem key="Cadastre-se" onClick={handleCloseNavMenu}>
+                <Typography textAlign="center">Cadastre-se</Typography>
+              </MenuItem>         
             </Menu>
           </Box>
           <DeviceHubIcon sx={{ display: { xs: 'flex', md: 'none' }, mr: 1 }} />
@@ -115,7 +119,7 @@ const ResponsiveAppBar = () => {
               key="Home"
               href="/"
               onClick={handleCloseNavMenu}
-              sx={{ my: 2, color: '#e8c466', display: 'block' }}
+              sx={{ my: 2, color: '#000', display: 'block' }}
             >
               Home
             </Button>
@@ -123,7 +127,7 @@ const ResponsiveAppBar = () => {
               key="Sobre"
               href="/about"
               onClick={handleCloseNavMenu}
-              sx={{ my: 2, color: '#e8c466', display: 'block' }}
+              sx={{ my: 2, color: '#000', display: 'block' }}
             >
               Sobre
             </Button>
@@ -131,7 +135,7 @@ const ResponsiveAppBar = () => {
               key="Planos"
               href="/prices"
               onClick={handleCloseNavMenu}
-              sx={{ my: 2, color: '#e8c466', display: 'block' }}
+              sx={{ my: 2, color: '#000', display: 'block' }}
             >
               Planos
             </Button>
@@ -139,15 +143,15 @@ const ResponsiveAppBar = () => {
               key="Contato"
               href="/contact"
               onClick={handleCloseNavMenu}
-              sx={{ my: 2, color: '#e8c466', display: 'block' }}
+              sx={{ my: 2, color: '#000', display: 'block' }}
             >
               Contato
             </Button>
           </Box>
 
-          <Box sx={{ width: 220, display: 'flex', justifyContent: 'space-between' }}>
+          <Box sx={{ display: { xs: 'none', md: 'flex' }, width: 220, justifyContent: 'space-between' }}>
             <Button variant="contained" >Cadastre-se</Button>
-            <Button variant="outlined">Login</Button>
+            <Button variant="outlined" href='/login'>Login</Button>
           </Box>
         </Toolbar>
       </Container>

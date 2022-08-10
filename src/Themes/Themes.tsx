@@ -3,11 +3,11 @@ import { createTheme } from '@mui/material/styles';
 const theme = createTheme({
     palette: {
         primary: {
-            main: '#8257e5',
+            main: '#e8c466',
         },
         secondary: {
             light: '#0066ff',
-            main: '#e8c466',
+            main: '#0424AC',
             contrastText: '#ffcc00',
         },
         contrastThreshold: 3,
@@ -19,15 +19,15 @@ const theme = createTheme({
             styleOverrides: {
                 contained: {
                     borderRadius: 6,
-                    backgroundColor: '#e8c466',
-                    border: '2px solid #e8c466',
-                    color:' #000',
+                    backgroundColor: '#0424AC',
+                    border: '2px solid #0424AC',
+                    color:' #fff',
                     transition: '0.4s',
                     fontWeight: 'bold',
                     cursor: 'pointer',
                     '&:hover': {
                         backgroundColor: 'transparent',
-                        color: '#e8c466'
+                        color: '#0424AC'
                     }
                 },
                 containedInfo: {
@@ -38,15 +38,17 @@ const theme = createTheme({
                 },
                 outlined: {
                     borderRadius: 6,
-                    border: '2px solid #e8c466',
-                    transition: '0.4s',
+                    border: '2px solid #0424AC',
+                    boxShadow:  'inset 0 0 0 0 #0424AC',
+                    transition: 'ease-out 0.3s',
                     cursor: 'pointer',
                     fontWeight: 'bold',
-                    color: '#e8c466',
+                    color: '#0424AC',
                     '&:hover': {
-                        backgroundColor: '#e8c466',
-                        color: '#000',
-                        border: '2px solid #e8c466'                   
+                        boxShadow:  'inset 300px 0 0 0 #0424AC',
+                        backgroundColor: '#0424AC',
+                        color: '#fff',
+                        border: '2px solid #0424AC'                   
                     }
                 }
             }

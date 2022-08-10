@@ -1,0 +1,1 @@
+import Cadastro from './Cadastro.module.scss';
