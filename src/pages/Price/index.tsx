@@ -7,7 +7,6 @@ import PictureMonthly from '../../assets/img/PictureMonthly.svg';
 import PictureSemiannual from '../../assets/img/PictureSemiannual.svg';
 import PictureYear from '../../assets/img/PictureYear.svg';
 
-import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
 
 import ArrowBackIcon from '@mui/icons-material/ArrowBack';

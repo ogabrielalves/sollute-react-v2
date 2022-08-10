@@ -147,7 +147,7 @@ const ResponsiveAppBar = () => {
 
           <Box sx={{ width: 220, display: 'flex', justifyContent: 'space-between' }}>
             <Button variant="contained" >Cadastre-se</Button>
-            <Button variant="outlined">Login</Button>
+            <Button variant="outlined" href='/login'>Login</Button>
           </Box>
         </Toolbar>
       </Container>

@@ -19,7 +19,7 @@ function Home() {
                         <br />
                         <span>Integração, facilidade, automatização, eficiência e agilidade</span> em um só serviço.
                     </p>
-                    <Button className={style.buttonRegister} variant="contained" endIcon={<ArrowForwardIcon />}>Conheça os planos</Button>
+                    <Button className={style.buttonRegister} variant="contained" href='/prices' endIcon={<ArrowForwardIcon />}>Conheça os planos</Button>
                 </div>
             </div>
         </div>
