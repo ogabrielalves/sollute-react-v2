@@ -1,4 +1,5 @@
 import * as React from 'react';
+import { useNavigate } from 'react-router-dom';
 
 import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
@@ -15,17 +16,19 @@ import DeviceHubIcon from '@mui/icons-material/DeviceHub';
 
 const ResponsiveAppBar = () => {
   const [anchorElNav, setAnchorElNav] = React.useState<null | HTMLElement>(null);
- 
+
   const handleOpenNavMenu = (event: React.MouseEvent<HTMLElement>) => {
     setAnchorElNav(event.currentTarget);
   };
- 
+
   const handleCloseNavMenu = () => {
     setAnchorElNav(null);
   };
 
+  const navigate = useNavigate();
+
   return (
-    <AppBar position="static" sx={{backgroundColor: 'transparent', color: '#000', boxShadow: 'none'}}>
+    <AppBar position="static" sx={{ backgroundColor: 'transparent', color: '#000', boxShadow: 'none' }}>
       <Container maxWidth="xl">
         <Toolbar disableGutters>
           <DeviceHubIcon sx={{ display: { xs: 'none', md: 'flex' }, mr: 1 }} />
@@ -77,22 +80,23 @@ const ResponsiveAppBar = () => {
               }}
             >
               <MenuItem key="Home" onClick={handleCloseNavMenu} >
-                <Typography onClick={() => window.location.href = "/"} textAlign="center">Home</Typography>
+                <Typography onClick={() => navigate("/")} textAlign="center">Home</Typography>
               </MenuItem>
               <MenuItem key="Sobre" onClick={handleCloseNavMenu}>
-                <Typography textAlign="center">Sobre</Typography>
+                <Typography onClick={() => navigate("/about")} textAlign="center">Sobre</Typography>
               </MenuItem>
               <MenuItem key="Planos" onClick={handleCloseNavMenu}>
-                <Typography onClick={() => window.location.href = "/prices"} textAlign="center">Planos</Typography>
+                <Typography onClick={() => navigate("/prices")} textAlign="center">Planos</Typography>
               </MenuItem>
               <MenuItem key="Contato" onClick={handleCloseNavMenu}>
-                <Typography textAlign="center">Contato</Typography>
+                <Typography onClick={() => navigate("/contact")} textAlign="center">Contato</Typography>
               </MenuItem>
               <MenuItem key="Login" onClick={handleCloseNavMenu}>
-                <Typography onClick={() => window.location.href = "/login"} textAlign="center">Login</Typography>
-              </MenuItem><MenuItem key="Cadastre-se" onClick={handleCloseNavMenu}>
-                <Typography textAlign="center">Cadastre-se</Typography>
-              </MenuItem>         
+                <Typography onClick={() => navigate("/login")} textAlign="center">Login</Typography>
+              </MenuItem>
+              <MenuItem key="Cadastre-se" onClick={handleCloseNavMenu}>
+                <Typography onClick={() => navigate("/register")} textAlign="center">Cadastre-se</Typography>
+              </MenuItem>
             </Menu>
           </Box>
           <DeviceHubIcon sx={{ display: { xs: 'flex', md: 'none' }, mr: 1 }} />

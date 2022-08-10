@@ -15,7 +15,6 @@ function Login() {
     return (
         <div className={style.background}>
             <div className={style.container}>
-
                 <div className={style.logo}>
                     <DeviceHubIcon sx={{ mr: 1, fontSize: '1.5rem' }} />
                     <Typography

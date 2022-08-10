@@ -2,7 +2,7 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Price from './pages/Price';
 import Home from './pages/Home';
 import Login from './pages/Login';
-// import sign-up from './pages/SignUp'
+import Contact from './pages/Contact';
 
 function Rotas() {
     return (  
@@ -11,7 +11,7 @@ function Rotas() {
                 <Route path='/prices' element={<Price />} />
                 <Route path='/' element={<Home />}/>
                 <Route path='/login' element={<Login />} />
-                {/* <Route path='/cadastro' element={<sign-up />} /> */}
+                <Route path='/contact' element={<Contact />} />
             </Routes>
         </Router>
     );

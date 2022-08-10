@@ -1,0 +1,47 @@
+.background {
+    background-color: #0424AC;
+    height: 100vh;
+    color: #fff;
+}
+
+.logo {
+    margin-left: 15px;
+    padding-top: 15px;
+}
+
+.container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.titleTop {
+    text-align: center;
+}
+
+.comboItems {
+    width: 100%;
+    display: flex;
+    margin: 30px 0;
+}
+
+.item {
+    background-color: #fff !important; 
+    width: 50%;
+    color: #000 !important;
+}
+
+.itemCenter {
+    background-color: #fff !important; 
+    width: 50%;
+    color: #000 !important;
+    margin: 0 15px !important;
+}
+
+.box {
+    background-color: #fff;
+    height: 420px;
+    border-radius: 5px;
+    padding: 20px 15px;
+}
