@@ -1,30 +1,35 @@
 .background {
-    background-image: url(../../assets/img/BackgroundLogin.jpg);
+    background-color: #f1f1f1;
     height: 100vh;
+}
+
+.container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    // background-color: pink;
+    width: 25%;
     display: flex;
-    justify-content: space-around;
-    flex-direction: column;
+    justify-content: center;
     align-items: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    color: #e8c466;
+    flex-direction: column;
 }
 
-.title{
-    font-size: 50px;
-    background: #E8C466;
-    background: linear-gradient(to right, #E7E8DC 0%, #E8C466 50%, #636363 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    
+.logo {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
 }
 
-.boxLogin{
-    display: flex;  
-    margin-bottom: 130px;
-    margin: 0 80px;
+.forgotPass {
+    outline-style: none;
+    color: #A4A4A4;
 }
 
-.buttonBack{
-    width: 250px;
+.register {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }

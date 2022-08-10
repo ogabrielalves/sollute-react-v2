@@ -4,7 +4,6 @@ import Card from '@mui/material/Card';
 import CardActions from '@mui/material/CardActions';
 import CardContent from '@mui/material/CardContent';
 import Button from '@mui/material/Button';
-import Typography from '@mui/material/Typography';
 
 interface Props {
   typePlan: string;
@@ -27,7 +26,7 @@ export default function PriceCard({ typePlan, pricePlan, imagePlan, alt, variant
           </p>
           <h2 className={style.boxPrice}>
             R$
-            <h1>
+            <h1 className={style.price}>
               {pricePlan}
             </h1>
             /mês

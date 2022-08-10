@@ -3,7 +3,7 @@
     height: 100vh;
     background-size: cover;
     background-attachment: fixed;
-    color: white;
+    color: #000;
 }
 
 .leftSide {
@@ -22,10 +22,11 @@
         width: 30%;
         margin-bottom: 10px;
         line-height: 1.6;
+        font-weight: 500;
 
         span {
-            color: #e8c466;
-            font-weight: 500;
+            color: #0424AC;
+            font-weight: 700;
         }
     }
 
